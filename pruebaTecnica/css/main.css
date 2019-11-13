@@ -43,10 +43,12 @@ body {
 .navbar a {
     color: #957CA9;
     padding: 10px;
+    border-radius: 50px;
 }
 
 .navbar a:hover {
-    animation: move 2s infinite alternate;
+    color: #F1F1E6;
+    animation: backgroundColor 1s infinite alternate;
 }
 
 a {
@@ -135,5 +137,14 @@ td:hover {
     }
     to {
         width: 30%;
+    }
+}
+
+@keyframes backgroundColor {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: #957CA9;
     }
 }
