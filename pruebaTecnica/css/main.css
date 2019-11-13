@@ -1,0 +1,139 @@
+body {
+    margin: 0px;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: #F1F1E6;
+    color: #5B0316;
+    padding-bottom: 35px;
+}
+
+.intro {
+    position: relative;
+    background-image: url('../img/office.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    padding: 20px;
+    margin: auto;
+    
+}
+
+.navbar ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    color: #957CA9;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    animation: move 2s infinite alternate;
+}
+
+a {
+    transition: background-color 0.5s ease;
+    display: inline-block;
+    text-decoration: none;
+    color: #E2B190;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-hover {
+    width: 200px;
+    background-image: linear-gradient(to right, #25aae1, #72C7DC, #72C7DC, #72C7DC);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+h1 {
+    color: #72C7DC;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 60%;
+    margin: auto;
+    border: 1px solid #BFA5A5;
+}
+
+th,
+td {
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    border: 1px solid #BFA5A5;
+    width: 50%;
+}
+
+th {
+    padding: 5px;
+}
+
+th:hover {
+    background-color: #5B0316;
+    color: #F1F1E6;
+    transition: background-color 0.5s ease;
+}
+
+td:hover {
+    background-color: #5B0316;
+    color: #F1F1E6;
+    transition: background-color 0.5s ease;
+}
+
+@keyframes move {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 30%;
+    }
+}
