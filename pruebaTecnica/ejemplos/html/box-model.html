@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Prueba Técnica">
+    <meta name="author" content="Cristian Bodón">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+                maximum-scale=1.0, user-scalable=no" />
+    <meta content="Prueba Técnica" name="keywords" />
+    <link rel="shortcut icon" type="image/png" href="/pruebaTecnica/img/Favicon.jpg" />
+
+    <!-- La base para construir todas las etiquetas de la página. -->
+    <!-- <base href="/pruebaTecnica/"> -->
+
+    <!-- CSS -->
+    <link href="/pruebaTecnica/css/main.css" rel="stylesheet">
+
+    <title>Ipartek</title>
+
+    <style>
+        p {
+            color: teal;
+            border: 5px solid green;
+            margin: 5px 20px;
+            padding: 0px 10px 20px 30px;
+        }
+
+        p span {
+            border: 3px dotted red;
+            padding: 10px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 2px solid teal;
+            background-color: royalblue;
+            border-radius: 10px;
+            font-size: 5em;
+            text-align: center;
+        }
+
+        section {
+            border: 1px solid #000;
+            padding: 10px;
+            margin-bottom: 50px;
+            -webkit-box-shadow: 10px 10px 40px 0px rgba(89, 89, 86, 1);
+            -moz-box-shadow: 10px 10px 40px 0px rgba(89, 89, 86, 1);
+            box-shadow: 10px 10px 40px 0px rgba(89, 89, 86, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#menu" id="menuButton">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+
+    <div class="intro">
+        <img src="/pruebaTecnica/img/logo-ipartek.png" class="logo" />
+    </div>
+
+    <div id="menu" class="navbar">
+        <ul>
+            <li><a href="/pruebaTecnica/index.html">Principal</a></li>
+            <li><a href="/pruebaTecnica/ejemplos/css/animaciones.html">Animación</a></li>
+            <li><a href="/pruebaTecnica/ejemplos/css/basics.html">Básicos</a></li>
+            <li><a href="/pruebaTecnica/ejemplos/css/selectores-basicos.html">Selectores Básicos</a></li>
+            <li><a href="/pruebaTecnica/ejemplos/css/selectores-avanzados.html">Selectores Avanzados</a></li>
+            <li><a href="/pruebaTecnica/ejemplos/css/selectores-especifidad.html">Selectores Especifidad</a></li>
+            <li><a href="/pruebaTecnica/ejemplos/html/box-model.html">Box Model</a></li>
+        </ul>
+    </div>
+
+    <h1>Box Model</h1>
+
+    <section>
+        <p>Toda etiqueta tiene una estructura de caja.</p>
+
+        <h2>Elementos en línea o bloque</h2>
+        <p><code>display</code> es el atributo para gestionar si es líena o bloque. Existen muchos más displays, como el
+            flexbox.</p>
+    </section>
+
+    <section>
+        <dl>
+            <dt>block</dt>
+            <dd>Ocupa todo el ancho del elemento padre.</dd>
+            <dt>inline</dt>
+            <dd>Ocupa lo que tenga su contenido.</dd>
+            <dt>inline-block</dt>
+            <dd>Híbrida de las dos anteriores.</dd>
+        </dl>
+
+        <p>Lorem ipsum dolor, sit <span> consectetur adipisicing elit.</span> Odit inventore quo maxime sunt modi cumque
+            deleniti doloribus accusantium hic, aperiam iste provident, dolorum impedit expedita vel delectus,
+            doloremque
+            iusto dolore!</p>
+    </section>
+
+    <section>
+        <div class="box">1</div>
+        <div class="box">2</div>
+    </section>
+
+    <script src="/pruebaTecnica/js/main.js"></script>
+</body>
+
+</html>

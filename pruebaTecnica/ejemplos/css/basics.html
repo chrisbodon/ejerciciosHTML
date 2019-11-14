@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
             maximum-scale=1.0, user-scalable=no" />
     <meta content="Prueba Técnica" name="keywords" />
-    <link rel="shortcut icon" type="image/png" href="img/Favicon.jpg" />
+    <link rel="shortcut icon" type="image/png" href="/pruebaTecnica/img/Favicon.jpg" />
 
     <!-- La base para construir todas las etiquetas de la página. -->
     <!-- <base href="/pruebaTecnica/"> -->
@@ -18,9 +18,43 @@
 
     <title>Ipartek</title>
 
+    <style>
+        .listStyles li:nth-child(3),
+        .listStyles li:nth-child(5) {
+            background-color: #5b0316;
+        }
+
+        .listStyles li:first-child,
+        .listStyles li:last-child {
+            font-size: 20px;
+            color: white;
+            background-color: orange;
+        }
+    </style>
 </head>
 
 <body>
+    <a href="#menu" id="menuButton">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+
+    <div class="intro">
+        <img src="/pruebaTecnica/img/logo-ipartek.png" class="logo" />
+    </div>
+
+    <div id="menu" class="navbar">
+        <ul>
+            <li><a href="/pruebaTecnica/index.html">Principal</a></li>
+            <li><a href="/pruebaTecnica/ejemplos/css/animaciones.html">Animación</a></li>
+            <li><a href="/pruebaTecnica/ejemplos/css/basics.html">Básicos</a></li>
+            <li><a href="/pruebaTecnica/ejemplos/css/selectores-basicos.html">Selectores Básicos</a></li>
+            <li><a href="/pruebaTecnica/ejemplos/css/selectores-avanzados.html">Selectores Avanzados</a></li>
+            <li><a href="/pruebaTecnica/ejemplos/css/selectores-especifidad.html">Selectores Especifidad</a></li>
+            <li><a href="/pruebaTecnica/ejemplos/html/box-model.html">Box Model</a></li>
+        </ul>
+    </div>
 
     <h1 id="title">Básicos</h1>
 
@@ -92,20 +126,35 @@
     <progress value="55" max="100"></progress>
 
     <h2>Pruebas CSS</h2>
-    <p class="textClass" style="color: aqua;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate ullam, unde, officiis libero itaque, numquam vitae est perspiciatis error quae dolores ipsam praesentium aspernatur delectus officia consequuntur reprehenderit mollitia.</p>
+    <p class="textClass" style="color: aqua;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+        cupiditate ullam, unde, officiis libero itaque, numquam vitae est perspiciatis error quae dolores ipsam
+        praesentium aspernatur delectus officia consequuntur reprehenderit mollitia.</p>
     <style>
-    /* CSS dentro de HTML*/
+        /* CSS dentro de HTML*/
 
-    .textClass {
-        color: blueviolet;
-    }
+        .textClass {
+            color: blueviolet;
+        }
     </style>
 
     <h2>Tipos de selectores</h2>
     <p>Vídeo sobre los tipos de selectores.</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ARaU6uGOa_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ARaU6uGOa_k" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <a href="/pruebaTecnica/index.html">Volver</a>
+
+    <h2>Selector de elementos de listas</h2>
+    <ul class="listStyles">
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+    </ul>
+
+    <a id="menu" href="/pruebaTecnica/index.html">Volver</a>
 
     <script src="/js/main.js"></script>
 </body>
