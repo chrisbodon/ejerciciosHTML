@@ -51,16 +51,17 @@
             -moz-box-shadow: 10px 10px 40px 0px rgba(89, 89, 86, 1);
             box-shadow: 10px 10px 40px 0px rgba(89, 89, 86, 1);
         }
+
+        .box-texto {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #000000;
+        }
     </style>
 </head>
 
 <body>
-    <a href="#menu" id="menuButton">
-        <span></span>
-        <span></span>
-        <span></span>
-    </a>
-
     <div class="intro">
         <img src="/pruebaTecnica/img/logo-ipartek.png" class="logo" />
     </div>
@@ -74,6 +75,8 @@
             <li><a href="/pruebaTecnica/ejemplos/css/selectores-avanzados.html">Selectores Avanzados</a></li>
             <li><a href="/pruebaTecnica/ejemplos/css/selectores-especifidad.html">Selectores Especifidad</a></li>
             <li><a href="/pruebaTecnica/ejemplos/html/box-model.html">Box Model</a></li>
+            <li><a href="/pruebaTecnica/ejemplos/html/game.html">Arkanoid</a></li>
+            <li><a href="/pruebaTecnica/ejemplos/html/posicionamiento.html">Posicionamiento</a></li>
         </ul>
     </div>
 
@@ -106,6 +109,66 @@
     <section>
         <div class="box">1</div>
         <div class="box">2</div>
+    </section>
+
+    <section>
+        <h2>Visibility</h2>
+        <p>Existen dos formas de ocultar elementos de html.</p>
+
+        <p>Usando <code>visibility</code></p>
+        <div class="box">1</div>
+        <div class="box" style="visibility: hidden;">2</div>
+        <div class="box">3</div>
+
+        <p>Usando <code>display: none</code></p>
+        <div class="box">1</div>
+        <div class="box" style="display: none;">2</div>
+        <div class="box">3</div>
+    </section>
+
+    <section>
+        <h2>Overflow</h2>
+        <p>Como se muestra cuando no entra en el contenedor padre <code>visible | hidden | scroll | auto</code></p>
+
+        <div class="box-texto" style="overflow: hidden;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloremque repellat impedit expedita
+                facere. Commodi quisquam praesentium ab earum odio voluptates, adipisci consequatur tenetur amet quae
+                qui iure neque saepe.</p>
+        </div>
+        <div class="box-texto" style="overflow: scroll;">
+            <p>Dolorem veritatis sint amet porro aperiam pariatur. Est ex asperiores voluptatum tempore exercitationem
+                molestiae doloremque inventore recusandae, magni debitis blanditiis totam quas impedit reiciendis atque
+                in quisquam nihil, suscipit adipisci.</p>
+        </div>
+        <div class="box-texto" style="overflow: auto;">
+            <p>Hic officia nulla ducimus voluptatem adipisci totam quas deleniti suscipit nisi commodi? Labore eum
+                dolores possimus, facere corrupti deserunt, quaerat cum dolore iure dicta id consequatur non amet quas.
+                Id.</p>
+        </div>
+        <div class="box-texto" style="overflow: visible;">
+            <p>Nostrum odit quos doloribus nesciunt, eius eos incidunt id nemo</p>
+        </div>
+
+        <p>También se puede usar <code>overflow-x</code> y <code>overflow-y</code></p>
+        <div class="box-texto" style="overflow-x: scroll;">
+            <p>Dolorem veritatis sint amet porro aperiam pariatur. Est ex asperiores voluptatum tempore exercitationem
+                molestiae doloremque inventore recusandae, magni debitis blanditiis totam quas impedit reiciendis atque
+                in quisquam nihil, suscipit adipisci.</p>
+        </div>
+        <div class="box-texto" style="overflow-y: scroll;">
+            <p>Dolorem veritatis sint amet porro aperiam pariatur. Est ex asperiores voluptatum tempore exercitationem
+                molestiae doloremque inventore recusandae, magni debitis blanditiis totam quas impedit reiciendis atque
+                in quisquam nihil, suscipit adipisci.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Z-index</h2>
+        <p>Se encarga de la profundidad de los elementos, cuando se solapan.</p>
+
+        <div class="box" style="z-index: 2;position: relative;top: 78px;left: 165px;">1</div>
+        <div class="box" style="z-index:1; position: relative; top: -10px; left: 20px; background-color: red;">2</div>
+        <div class="box" style="z-index:0; position: relative;">3</div>
     </section>
 
     <script src="/pruebaTecnica/js/main.js"></script>
